@@ -619,7 +619,7 @@ var TheRace;
                 }
             }
             result.VoteWinner = ((clintonVote == sandersVote) ? 0 : (clintonVote < sandersVote ? 1 : 2));
-            result.DelegateWinner = ((result.ClintonDelegates == result.SandersDelegates) ? 0 : (result.ClintonDelegates < result.SandersDelegates ? 1 : 2));
+            result.DelegateWinner = ((result.ClintonDelegates == result.SandersDelegates) ? 0 : (result.ClintonDelegates > result.SandersDelegates ? 1 : 2));
             return result;
         };
         TheRace1.prototype.diff = function (c, s) {
