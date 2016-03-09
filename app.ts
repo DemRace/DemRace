@@ -403,6 +403,13 @@ module TheRace {
             State.TotalDelegates = 130;
             State.TotalCongDistricts = 4;
             State.SubElections.push(se);
+
+
+            //State Results
+            State.ElectionLocked = true;
+            State.ResultClintonDelegates = 61;
+            State.ResultSandersDelegates = 69;
+
             this.Elections.push(State);
 
             // Load Mississippi
@@ -412,6 +419,12 @@ module TheRace {
             State.TotalDelegates = 36;
             State.TotalCongDistricts = 4;
             State.SubElections.push(se);
+
+            //State Results
+            State.ElectionLocked = true;
+            State.ResultClintonDelegates = 32;
+            State.ResultSandersDelegates = 4;
+
             this.Elections.push(State);
 
             // Load Northern Mariana Islands
@@ -726,7 +739,7 @@ module TheRace {
 
             for (let ed in this.Elections) {
 
-                this.UpdateElection(ed, true);
+                this.UpdateElection(ed, true, "");
 
             }
             this.DisplayTotals();
@@ -736,6 +749,12 @@ module TheRace {
         public winnerClass(clinton: number, sanders: number)
         {
             return (clinton == sanders ? "" : (clinton > sanders ? "Clinton-Win" :  "Sanders-Win"));
+        }
+
+        public getPercentage(value: number)
+        {
+           return (value * 100).toFixed(2) + "%"
+
         }
 
         public DisplayTotals() {
@@ -774,41 +793,41 @@ module TheRace {
 
 
             var TotalsCommittedSpread = document.getElementById("Row-Totals-Committed-Spread");
-            var TotalsCommittedSpread = document.getElementById("Row-S-Totals-Committed-Spread");
+            var TotalsSCommittedSpread = document.getElementById("Row-S-Totals-Committed-Spread");
             var TotalsProjectedSpread = document.getElementById("Row-Totals-Projected-Spread");
             var TotalsSpread = document.getElementById("Row-Totals-Spread")
 
-            document.getElementById("Row-Totals-Committed-C").innerHTML = ClintonCommittedDelegates.toString();
-            document.getElementById("Row-Totals-Committed-S").innerHTML = SandersCommittedDelegates.toString();
-            document.getElementById("Row-Totals-Committed-A").innerHTML = TotalCommittedDelegates.toString();
-            TotalsCommittedSpread.innerHTML = this.diff(ClintonCommittedDelegates, SandersCommittedDelegates);
+            document.getElementById("Row-Totals-Committed-C").innerHTML = ClintonCommittedDelegates.toString() + "<sup> " + this.getPercentage(ClintonCommittedDelegates / TotalCommittedDelegates) + "<\sup>";
+            document.getElementById("Row-Totals-Committed-S").innerHTML = SandersCommittedDelegates.toString() + "<sup> " + this.getPercentage(SandersCommittedDelegates / TotalCommittedDelegates) + "<\sup>";
+            document.getElementById("Row-Totals-Committed-A").innerHTML = TotalCommittedDelegates.toString() + "<sup> " + this.getPercentage(TotalCommittedDelegates / 4051) + "<\sup>";
+            TotalsCommittedSpread.innerHTML = this.diff(ClintonCommittedDelegates, SandersCommittedDelegates) + "<sup> " + this.getPercentage(this.diffn(ClintonCommittedDelegates, SandersCommittedDelegates) / TotalCommittedDelegates) + "<\sup>";
             TotalsCommittedSpread.className = this.winnerClass(ClintonCommittedDelegates, SandersCommittedDelegates);
 
 
-            document.getElementById("Row-S-Totals-Committed-C").innerHTML = ClintonCommittedDelegates.toString();
-            document.getElementById("Row-S-Totals-Committed-S").innerHTML = SandersCommittedDelegates.toString();
-            document.getElementById("Row-S-Totals-Committed-A").innerHTML = TotalCommittedDelegates.toString();
-           // TotalsCommittedSpread.innerHTML = this.diff(ClintonCommittedDelegates, SandersCommittedDelegates);
+            document.getElementById("Row-S-Totals-Committed-C").innerHTML = ClintonCommittedDelegates.toString() + "<sup> " + this.getPercentage(ClintonCommittedDelegates / TotalCommittedDelegates) + "<\sup>";
+            document.getElementById("Row-S-Totals-Committed-S").innerHTML = SandersCommittedDelegates.toString() + "<sup> " + this.getPercentage(SandersCommittedDelegates / TotalCommittedDelegates) + "<\sup>";
+            document.getElementById("Row-S-Totals-Committed-A").innerHTML = TotalCommittedDelegates.toString() + "<sup> " + this.getPercentage(TotalCommittedDelegates / 4051) + "<\sup>";
+            TotalsSCommittedSpread.innerHTML = this.diff(ClintonCommittedDelegates, SandersCommittedDelegates) + "<sup> " + this.getPercentage(this.diffn(ClintonCommittedDelegates, SandersCommittedDelegates) / TotalCommittedDelegates) + "<\sup>";
 
-            document.getElementById("Row-Totals-Projected-C").innerHTML = ClintonProjectedDelegates.toString();
-            document.getElementById("Row-Totals-Projected-S").innerHTML = SandersProjectedDelegates.toString();
-            document.getElementById("Row-Totals-Projected-A").innerHTML = TotalProjectedDelegates.toString();
-            TotalsProjectedSpread.innerHTML = this.diff(ClintonProjectedDelegates, SandersProjectedDelegates);
+            document.getElementById("Row-Totals-Projected-C").innerHTML = ClintonProjectedDelegates.toString() + "<sup> " + this.getPercentage(ClintonProjectedDelegates / TotalProjectedDelegates) + "<\sup>";
+            document.getElementById("Row-Totals-Projected-S").innerHTML = SandersProjectedDelegates.toString() + "<sup> " + this.getPercentage(SandersProjectedDelegates / TotalProjectedDelegates) + "<\sup>";
+            document.getElementById("Row-Totals-Projected-A").innerHTML = TotalProjectedDelegates.toString() + "<sup> " + this.getPercentage(TotalProjectedDelegates / 4051) + "<\sup>";
+            TotalsProjectedSpread.innerHTML = this.diff(ClintonProjectedDelegates, SandersProjectedDelegates) + "<sup> " + this.getPercentage(this.diffn(ClintonProjectedDelegates, SandersProjectedDelegates) / TotalProjectedDelegates) + "<\sup>";
             TotalsProjectedSpread.className = this.winnerClass(ClintonProjectedDelegates, SandersProjectedDelegates);
 
-            document.getElementById("Row-Totals-C").innerHTML = ClintonDelegates.toString();
-            document.getElementById("Row-Totals-S").innerHTML = SandersDelegates.toString();
+            document.getElementById("Row-Totals-C").innerHTML = ClintonDelegates.toString() + "<sup> " + this.getPercentage(ClintonDelegates / 4051) + "<\sup>";
+            document.getElementById("Row-Totals-S").innerHTML = SandersDelegates.toString() + "<sup> " + this.getPercentage(SandersDelegates / 4051) + "<\sup>";
             document.getElementById("Row-Totals-A").innerHTML = TotalDelegates.toString();
-            TotalsSpread.innerHTML = this.diff(ClintonDelegates, SandersDelegates);
+            TotalsSpread.innerHTML = this.diff(ClintonDelegates, SandersDelegates) + "<sup> " + this.getPercentage(this.diffn(ClintonDelegates, SandersDelegates) / 4051) + "<\sup>";
             TotalsSpread.className = this.winnerClass(ClintonDelegates, SandersDelegates);
 
             document.getElementById("Row-Totals2").className = this.winnerClass(ClintonDelegates, SandersDelegates);
             if (ClintonDelegates > SandersDelegates) {
-                document.getElementById("Row-Totals-Winner").innerHTML = "Clinton Wins!";
+                document.getElementById("Row-Totals-Winner").innerHTML = "Clinton Wins Majority!";
             }
             else
             {
-                document.getElementById("Row-Totals-Winner").innerHTML = "Sanders Wins!";
+                document.getElementById("Row-Totals-Winner").innerHTML = "Sanders Wins Majority!";
             }
 
         }
@@ -880,7 +899,23 @@ module TheRace {
 
         }
 
-        public UpdateElection(ed: string, firstLoad: Boolean) {
+        public diffn(c: number, s: number) {
+            if (c == s) {
+                return 0;
+            }
+            else {
+
+                if (c > s) {
+                    return Math.abs(c - s);
+                }
+                else {
+                    return  Math.abs(c - s);
+                }
+            }
+
+        }
+
+        public UpdateElection(ed: string, firstLoad: Boolean, inputType: string) {
 
             var Election = this.Elections[ed];
             var ClintonDelegateDiv = document.getElementById("Row-" + Election.ElectionName.replace(" ", "_").replace(" ", "_") + "-C");
@@ -894,7 +929,7 @@ module TheRace {
             if (this.Elections[ed].ElectionLocked) {
                 ClintonDelegateDiv.innerHTML = Election.ResultClintonDelegates.toString();
                 SandersDelegateDiv.innerHTML = Election.ResultSandersDelegates.toString();
-                ProjectionDiv.innerHTML = ""
+                ProjectionDiv.innerHTML = "Locked"
                 SpreadDelegateDiv.innerHTML = this.diff(Election.ResultClintonDelegates, Election.ResultSandersDelegates);
                 var electionResult: ElectionResult = new ElectionResult;
 
@@ -918,12 +953,19 @@ module TheRace {
                 Election.ProjectedClintonDelegates = electionResult.ClintonDelegates;
                 ClintonDelegateDiv.innerHTML = Election.ProjectedClintonDelegates.toString();
                 SandersDelegateDiv.innerHTML = Election.ProjectedSandersDelegates.toString();
-                if (firstLoad) {
+               // if (firstLoad) {
                     ProjectionDiv.innerHTML = '<input type="range"  step=".01" value="' + Election.ProjectedSandersVotePercentage + '" oninput"ttt.ProjectStateDelegates(' + "'" + ed + "'" + ', this.value);" onchange="ttt.ProjectStateDelegates(' + "'" + ed + "'" + ', this.value);" > ';
-                }
-                ProjectedClintonDelegates.innerHTML = Election.ProjectedClintonVotePercentage.toFixed(3);
-                ProjectedSandersDelegates.innerHTML = Election.ProjectedSandersVotePercentage.toFixed(3);
-                SpreadDelegateDiv.innerHTML = this.diff(Election.ProjectedClintonDelegates, Election.ProjectedSandersDelegates);
+               // }
+
+
+
+                    if (inputType != "C") {
+                        ProjectedClintonDelegates.innerHTML = '<input type="number" name="quantity" min="1" max="100" value="' + Election.ProjectedClintonVotePercentage.toFixed(3) + '" oninput="ttt.ProjectStateDelegates(' + "'" + ed + "'" + ', 100 - this.value, ' + "'C'" + ');" >';
+                    }
+                    if (inputType != "S") {
+                        ProjectedSandersDelegates.innerHTML = '<input type="number" name="quantity" min="1" max="100" value="' + Election.ProjectedSandersVotePercentage.toFixed(3) + '" oninput="ttt.ProjectStateDelegates(' + "'" + ed + "'" + ', this.value, ' + "'S'" + ');">';
+                    }
+                SpreadDelegateDiv.innerHTML = this.diff(Election.ProjectedClintonDelegates, Election.ProjectedSandersDelegates) + (electionResult.CoinToss ? "<sup>*CT</sup>": "");
 
 
                 if (electionResult.VoteWinner == 0 ? "" : (electionResult.VoteWinner == 1 ? "Clinton Winner" : "Sanders Winner"));
@@ -937,7 +979,7 @@ module TheRace {
 
         }
 
-        public ProjectStateDelegates(election: string, value: number) {
+        public ProjectStateDelegates(election: string, value: number, inputType: string) {
 
 
 
@@ -947,7 +989,7 @@ module TheRace {
             this.Elections[election].ProjectedClintonVotePercentage = (100 - value);
             this.Elections[election].ProjectedClintonDelegates = Math.round(this.Elections[election].TotalDelegates * ((100 - value) / 100));
 
-            this.UpdateElection(election, false);
+            this.UpdateElection(election, false, inputType);
             this.DisplayTotals();
         }
 

@@ -3,792 +3,816 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">-->
     <title>The Race to 2026 Delegates</title>
 
-  
+
 
     <style type="text/css">
         .auto-style1 {
             height: 25px;
         }
-        .auto-style3 {
-            width: 140px;
+
+        .auto-style4 {
+            height: 32px;
         }
     </style>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-           <link rel="stylesheet" href="app.css?version=4" type="text/css" />
+    <link rel="stylesheet" href="app.css?version=5" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script src="scripts/ai.0.22.6-build00108.min.js"></script>
-<!--       <script src="app.min.js?rndstr=<%= getRandomStr() %>"></script>-->
-    <script src="app.min.js?version=4"></script>
-           <!-- <script src="app.js"></script>-->
-    <!--<link href="scripts/rangeslider.css" rel="stylesheet" />
-    <script src="scripts/rangeslider.min.js"></script>-->
+
+    <script src="app.min.js?version=5"></script>
+
 </head>
 <body>
     <h1>Democratic Race to 2026 Delegates</h1>
     <div id="contentTheRace">
+        <div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th colspan="10" class="Header-Summery">
+                             This analysis only includes pledged delegates, as super-delegates do not finalize their vote until the Democratic National Convention on July 28 2016.  
+                            A candidate that accumulates 2,026 delegates would have a majority of 4,051 pledged delegates. 2,383 delegates are needed for nomination.
+                        </th>
 
-        
+                    </tr>
+                    <tr>
+                        <th colspan="10" class="auto-style4">
+                            Make this site better (We need a responsive mobile view)! Fork it on GitHub <a href="https://github.com/DemRace/DemRace">https://github.com/DemRace/DemRace</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="auto-style4" tabindex="0">Date</th>
+                        <th class="State" tabindex="0">State/territory</th>
+                        <th class="auto-style1 hideMobileItem">Delegates</th>
+                        <th class="hideMobileItem ElectionType" tabindex="0">Type</th>
+                        <th class="Projection" tabindex="0"></th>
+                        <th class="Projection" tabindex="0">Projection</th>
+                        <th class="Projection" tabindex="0"></th>
 
-        <div >
-    <table class="table table-striped table-condensed table-hover" >
-        <thead>
-            <tr>
-                <th colspan="12" class="Header-Summery">
-                This analysis only includes pledged delegates, as super-delegates do not finalize their vote until the Democratic National Convention on July 28 2016.  We take this position as it would be unprecedented for the super-delegates to go against the will of the people.  
-    
-                </th>
-
-            </tr>
-            <tr>
-                                <th  colspan="12">
-                    Make this site better (We need a responsive mobile view)! Fork it on GitHub <a href="https://github.com/DemRace/DemRace">https://github.com/DemRace/DemRace</a>
-
-                </th>
-            </tr>
-            <tr>
-                <th  class="headerSort" tabindex="0"  >Date</th>
-                <th  class="headerSort" tabindex="0"  >State/territory</th>
-                <th >Delegates</th>
-                <th  class="auto-style3" tabindex="0"  >Type</th>
-                <th  class="headerSort" tabindex="0"  >&nbsp;</th>
-                <th  class="headerSort" tabindex="0"  >Projection</th>
-                <th  class="headerSort" tabindex="0"  >&nbsp;</th>
-      
-                <th class="auto-style1"><a href="https://en.wikipedia.org/wiki/Hillary_Clinton_presidential_campaign,_2016" title="Hillary Clinton presidential campaign, 2016">Clinton</a></th>
-                <th class="auto-style1"><a href="https://en.wikipedia.org/wiki/Bernie_Sanders_presidential_campaign,_2016" title="Bernie Sanders presidential campaign, 2016">Sanders</a></th>
-                <th class="auto-style1">Spread</th>
-            </tr>
-        </thead>
-        <tbody>
+                        <th class="DelegateCount"><a href="https://en.wikipedia.org/wiki/Hillary_Clinton_presidential_campaign,_2016" title="Hillary Clinton presidential campaign, 2016">Clinton</a></th>
+                        <th class="DelegateCount"><a href="https://en.wikipedia.org/wiki/Bernie_Sanders_presidential_campaign,_2016" title="Bernie Sanders presidential campaign, 2016">Sanders</a></th>
+                        <th class="auto-style1">Spread</th>
+                    </tr>
+                </thead>
+                <tbody>
 
 
-            <tr id="Row-Iowa">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-02-01-0000</span><span style="white-space:nowrap">February 1</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Iowa,_2016" title="United States presidential election in Iowa, 2016">Iowa</a></td>
-                <td>44</td>
-                <td class="auto-style3">Semi-open caucus</td>
-                <td id="Row-Iowa-Projection-C">&nbsp;</td>
-                <td id="Row-Iowa-Projection">&nbsp;</td>
-                <td id="Row-Iowa-Projection-S">&nbsp;</td>
-                <td id="Row-Iowa-C">–</td>
-                <td id="Row-Iowa-S">–</td>
-                <td id="Row-Iowa-Spread">-</td>
-            </tr>
-            <tr id="Row-New_Hampshire">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-02-09-0000</span><span style="white-space:nowrap">February 9</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/New_Hampshire_Democratic_primary,_2016" title="New Hampshire Democratic primary, 2016">New Hampshire</a></td>
-                <td>24</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-New_Hampshire-Projection-C">&nbsp;</td>
-                <td id="Row-New_Hampshire-Projection">&nbsp;</td>
-                <td id="Row-New_Hampshire-Projection-S">&nbsp;</td>
-                <td id="Row-New_Hampshire-C">–</td>
-                <td id="Row-New_Hampshire-S">–</td>
-                <td id="Row-New_Hampshire-Spread">-</td>
-            </tr>
-            <tr id="Row-Nevada">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-02-20-0000</span><span style="white-space:nowrap">February 20</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Nevada,_2016" title="United States presidential election in Nevada, 2016">Nevada</a></td>
-                <td>35</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Nevada-Projection-C">&nbsp;</td>
-                <td id="Row-Nevada-Projection">&nbsp;</td>
-                <td id="Row-Nevada-Projection-S">&nbsp;</td>
-                <td id="Row-Nevada-C">–</td>
-                <td id="Row-Nevada-S">–</td>
-                <td id="Row-Nevada-Spread">-</td>
-            </tr>
-            <tr id="Row-South_Carolina">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-02-27-0000</span><span style="white-space:nowrap">February 27</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_South_Carolina,_2016" title="United States presidential election in South Carolina, 2016">South Carolina</a></td>
-                <td>53</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-South_Carolina-Projection-C">&nbsp;</td>
-                <td id="Row-South_Carolina-Projection">&nbsp;</td>
-                <td id="Row-South_Carolina-Projection-S">&nbsp;</td>
-                <td id="Row-South_Carolina-C">–</td>
-                <td id="Row-South_Carolina-S">–</td>
-                <td id="Row-South_Carolina-Spread">-</td>
-            </tr>
-            <tr id="Row-Alabama">
-                <td rowspan="12"><span class="sortkey" style="display:none;speak:none">000000002016-03-01-0000</span><span style="white-space:nowrap">March 1</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Alabama,_2016" title="United States presidential election in Alabama, 2016">Alabama</a></td>
-                <td>53</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Alabama-Projection-C">&nbsp;</td>
-                <td id="Row-Alabama-Projection">&nbsp;</td>
-                <td id="Row-Alabama-Projection-S">&nbsp;</td>
-                <td id="Row-Alabama-C">–</td>
-                <td id="Row-Alabama-S">–</td>
-                <td id="Row-Alabama-Spread">-</td>
-            </tr>
-            <tr id="Row-American_Samoa">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_American_Samoa,_2016" title="United States presidential election in American Samoa, 2016">American Samoa</a></td>
-                <td>6</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-American_Samoa-Projection-C">&nbsp;</td>
-                <td id="Row-American_Samoa-Projection">&nbsp;</td>
-                <td id="Row-American_Samoa-Projection-S">&nbsp;</td>
-                <td id="Row-American_Samoa-C">–</td>
-                <td id="Row-American_Samoa-S">–</td>
-                <td id="Row-American_Samoa-Spread">-</td>
-            </tr>
-            <tr id="Row-Arkansas">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Arkansas,_2016" title="United States presidential election in Arkansas, 2016">Arkansas</a></td>
-                <td>32</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Arkansas-Projection-C">&nbsp;</td>
-                <td id="Row-Arkansas-Projection">&nbsp;</td>
-                <td id="Row-Arkansas-Projection-S">&nbsp;</td>
-                <td id="Row-Arkansas-C">–</td>
-                <td id="Row-Arkansas-S">–</td>
-                <td id="Row-Arkansas-Spread">-</td>
-            </tr>
-            <tr id="Row-Colorado">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Colorado,_2016" title="United States presidential election in Colorado, 2016">Colorado</a></td>
-                <td>66</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Colorado-Projection-C">&nbsp;</td>
-                <td id="Row-Colorado-Projection">&nbsp;</td>
-                <td id="Row-Colorado-Projection-S">&nbsp;</td>
-                <td id="Row-Colorado-C">–</td>
-                <td id="Row-Colorado-S">–</td>
-                <td id="Row-Colorado-Spread">-</td>
-            </tr>
-            <tr id="Row-Georgia">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Georgia,_2016" title="United States presidential election in Georgia, 2016">Georgia</a></td>
-                <td>102</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Georgia-Projection-C">&nbsp;</td>
-                <td id="Row-Georgia-Projection">&nbsp;</td>
-                <td id="Row-Georgia-Projection-S">&nbsp;</td>
-                <td id="Row-Georgia-C">–</td>
-                <td id="Row-Georgia-S">–</td>
-                <td id="Row-Georgia-Spread">-</td>
-            </tr>
-            <tr id="Row-Massachusetts">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Massachusetts,_2016" title="United States presidential election in Massachusetts, 2016">Massachusetts</a></td>
-                <td>91</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-Massachusetts-Projection-C">&nbsp;</td>
-                <td id="Row-Massachusetts-Projection">&nbsp;</td>
-                <td id="Row-Massachusetts-Projection-S">&nbsp;</td>
-                <td id="Row-Massachusetts-C">–</td>
-                <td id="Row-Massachusetts-S">–</td>
-                <td id="Row-Massachusetts-Spread">-</td>
-            </tr>
-            <tr id="Row-Minnesota">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Minnesota,_2016" title="United States presidential election in Minnesota, 2016">Minnesota</a></td>
-                <td>77</td>
-                <td class="auto-style3">Open caucus</td>
-                <td id="Row-Minnesota-Projection-C">&nbsp;</td>
-                <td id="Row-Minnesota-Projection">&nbsp;</td>
-                <td id="Row-Minnesota-Projection-S">&nbsp;</td>
-                <td id="Row-Minnesota-C">–</td>
-                <td id="Row-Minnesota-S">–</td>
-                <td id="Row-Minnesota-Spread">-</td>
-            </tr>
-            <tr id="Row-Oklahoma">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Oklahoma,_2016" title="United States presidential election in Oklahoma, 2016">Oklahoma</a></td>
-                <td>38</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-Oklahoma-Projection-C">&nbsp;</td>
-                <td id="Row-Oklahoma-Projection">&nbsp;</td>
-                <td id="Row-Oklahoma-Projection-S">&nbsp;</td>
-                <td id="Row-Oklahoma-C">–</td>
-                <td id="Row-Oklahoma-S">–</td>
-                <td id="Row-Oklahoma-Spread">-</td>
-            </tr>
-            <tr id="Row-Tennessee">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Tennessee,_2016" title="United States presidential election in Tennessee, 2016">Tennessee</a></td>
-                <td>67</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Tennessee-Projection-C">&nbsp;</td>
-                <td id="Row-Tennessee-Projection">&nbsp;</td>
-                <td id="Row-Tennessee-Projection-S">&nbsp;</td>
-                <td id="Row-Tennessee-C">–</td>
-                <td id="Row-Tennessee-S">–</td>
-                <td id="Row-Tennessee-Spread">-</td>
-            </tr>
-            <tr id="Row-Texas">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Texas,_2016" title="United States presidential election in Texas, 2016">Texas</a></td>
-                <td>222</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Texas-Projection-C">&nbsp;</td>
-                <td id="Row-Texas-Projection">&nbsp;</td>
-                <td id="Row-Texas-Projection-S">&nbsp;</td>
-                <td id="Row-Texas-C">–</td>
-                <td id="Row-Texas-S">–</td>
-                <td id="Row-Texas-Spread">-</td>
-            </tr>
-            <tr id="Row-Vermont">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Vermont,_2016" title="United States presidential election in Vermont, 2016">Vermont</a></td>
-                <td>16</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Vermont-Projection-C">&nbsp;</td>
-                <td id="Row-Vermont-Projection">&nbsp;</td>
-                <td id="Row-Vermont-Projection-S">&nbsp;</td>
-                <td id="Row-Vermont-C">–</td>
-                <td id="Row-Vermont-S">–</td>
-                <td id="Row-Vermont-Spread">-</td>
-            </tr>
-            <tr id="Row-Virginia">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Virginia,_2016" title="United States presidential election in Virginia, 2016">Virginia</a></td>
-                <td>95</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Virginia-Projection-C">&nbsp;</td>
-                <td id="Row-Virginia-Projection">&nbsp;</td>
-                <td id="Row-Virginia-Projection-S">&nbsp;</td>
-                <td id="Row-Virginia-C">–</td>
-                <td id="Row-Virginia-S">–</td>
-                <td id="Row-Virginia-Spread">-</td>
-            </tr>
-            <tr id="Row-Kansas">
-                <td rowspan="3"><span class="sortkey" style="display:none;speak:none">000000002016-03-05-0000</span><span style="white-space:nowrap">March 5</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Kansas,_2016" title="United States presidential election in Kansas, 2016">Kansas</a></td>
-                <td>33</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Kansas-Projection-C">&nbsp;</td>
-                <td id="Row-Kansas-Projection">&nbsp;</td>
-                <td id="Row-Kansas-Projection-S">&nbsp;</td>
-                <td id="Row-Kansas-C">–</td>
-                <td id="Row-Kansas-S">–</td>
-                <td id="Row-Kansas-Spread">-</td>
-            </tr>
-            <tr id="Row-Louisiana">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Louisiana,_2016" title="United States presidential election in Louisiana, 2016">Louisiana</a></td>
-                <td>51</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Louisiana-Projection-C">&nbsp;</td>
-                <td id="Row-Louisiana-Projection">&nbsp;</td>
-                <td id="Row-Louisiana-Projection-S">&nbsp;</td>
-                <td id="Row-Louisiana-C">–</td>
-                <td id="Row-Louisiana-S">–</td>
-                <td id="Row-Louisiana-Spread">-</td>
-            </tr>
-            <tr id="Row-Nebraska">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Nebraska,_2016" title="United States presidential election in Nebraska, 2016">Nebraska</a></td>
-                <td>25</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Nebraska-Projection-C">&nbsp;</td>
-                <td id="Row-Nebraska-Projection">&nbsp;</td>
-                <td id="Row-Nebraska-Projection-S">&nbsp;</td>
-                <td id="Row-Nebraska-C">–</td>
-                <td id="Row-Nebraska-S">–</td>
-                <td id="Row-Nebraska-Spread">-</td>
-            </tr>
-            <tr id="Row-Maine">
-                <td rowspan="1"><span class="sortkey" style="display:none;speak:none">000000002016-03-06-0000</span><span style="white-space:nowrap">March 6</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Maine,_2016" title="United States presidential election in Maine, 2016">Maine</a></td>
-                <td>25</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Maine-Projection-C">&nbsp;</td>
-                <td id="Row-Maine-Projection">&nbsp;</td>
-                <td id="Row-Maine-Projection-S">&nbsp;</td>
-                <td id="Row-Maine-C">–</td>
-                <td id="Row-Maine-S">–</td>
-                <td id="Row-Maine-Spread">-</td>
-            </tr>
+                    <tr id="Row-Iowa">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-02-01-0000</span><span style="white-space: nowrap">February 1</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Iowa,_2016" title="United States presidential election in Iowa, 2016">Iowa</a></td>
+                        <td class="hideMobileItem">44</td>
+                        <td class="hideMobileItem ElectionType">Semi-open caucus</td>
+                        <td id="Row-Iowa-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Iowa-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Iowa-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Iowa-C" class="DelegateCount">–</td>
+                        <td id="Row-Iowa-S" class="DelegateCount">–</td>
+                        <td id="Row-Iowa-Spread">-</td>
+                    </tr>
+                    <tr id="Row-New_Hampshire">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-02-09-0000</span><span style="white-space: nowrap">February 9</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/New_Hampshire_Democratic_primary,_2016" title="New Hampshire Democratic primary, 2016">New Hampshire</a></td>
+                        <td class="hideMobileItem">24</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-New_Hampshire-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Hampshire-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Hampshire-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Hampshire-C" class="DelegateCount">–</td>
+                        <td id="Row-New_Hampshire-S" class="DelegateCount">–</td>
+                        <td id="Row-New_Hampshire-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Nevada">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-02-20-0000</span><span style="white-space: nowrap">February 20</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Nevada,_2016" title="United States presidential election in Nevada, 2016">Nevada</a></td>
+                        <td class="hideMobileItem">35</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Nevada-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Nevada-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Nevada-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Nevada-C" class="DelegateCount">–</td>
+                        <td id="Row-Nevada-S" class="DelegateCount">–</td>
+                        <td id="Row-Nevada-Spread">-</td>
+                    </tr>
+                    <tr id="Row-South_Carolina">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-02-27-0000</span><span style="white-space: nowrap">February 27</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_South_Carolina,_2016" title="United States presidential election in South Carolina, 2016">South Carolina</a></td>
+                        <td class="hideMobileItem">53</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-South_Carolina-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Carolina-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Carolina-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Carolina-C" class="DelegateCount">–</td>
+                        <td id="Row-South_Carolina-S" class="DelegateCount">–</td>
+                        <td id="Row-South_Carolina-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Alabama">
+                        <td rowspan="12" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-01-0000</span><span style="white-space: nowrap">March 1</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Alabama,_2016" title="United States presidential election in Alabama, 2016">Alabama</a></td>
+                        <td class="hideMobileItem">53</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Alabama-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Alabama-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Alabama-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Alabama-C" class="DelegateCount">–</td>
+                        <td id="Row-Alabama-S" class="DelegateCount">–</td>
+                        <td id="Row-Alabama-Spread">-</td>
+                    </tr>
+                    <tr id="Row-American_Samoa">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_American_Samoa,_2016" title="United States presidential election in American Samoa, 2016">American Samoa</a></td>
+                        <td class="hideMobileItem">6</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-American_Samoa-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-American_Samoa-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-American_Samoa-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-American_Samoa-C" class="DelegateCount">–</td>
+                        <td id="Row-American_Samoa-S" class="DelegateCount">–</td>
+                        <td id="Row-American_Samoa-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Arkansas">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Arkansas,_2016" title="United States presidential election in Arkansas, 2016">Arkansas</a></td>
+                        <td class="hideMobileItem">32</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Arkansas-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Arkansas-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Arkansas-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Arkansas-C" class="DelegateCount">–</td>
+                        <td id="Row-Arkansas-S" class="DelegateCount">–</td>
+                        <td id="Row-Arkansas-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Colorado">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Colorado,_2016" title="United States presidential election in Colorado, 2016">Colorado</a></td>
+                        <td class="hideMobileItem">66</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Colorado-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Colorado-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Colorado-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Colorado-C" class="DelegateCount">–</td>
+                        <td id="Row-Colorado-S" class="DelegateCount">–</td>
+                        <td id="Row-Colorado-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Georgia">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Georgia,_2016" title="United States presidential election in Georgia, 2016">Georgia</a></td>
+                        <td class="hideMobileItem">102</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Georgia-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Georgia-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Georgia-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Georgia-C" class="DelegateCount">–</td>
+                        <td id="Row-Georgia-S" class="DelegateCount">–</td>
+                        <td id="Row-Georgia-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Massachusetts">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Massachusetts,_2016" title="United States presidential election in Massachusetts, 2016">Massachusetts</a></td>
+                        <td class="hideMobileItem">91</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-Massachusetts-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Massachusetts-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Massachusetts-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Massachusetts-C" class="DelegateCount">–</td>
+                        <td id="Row-Massachusetts-S" class="DelegateCount">–</td>
+                        <td id="Row-Massachusetts-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Minnesota">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Minnesota,_2016" title="United States presidential election in Minnesota, 2016">Minnesota</a></td>
+                        <td class="hideMobileItem">77</td>
+                        <td class="hideMobileItem ElectionType">Open caucus</td>
+                        <td id="Row-Minnesota-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Minnesota-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Minnesota-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Minnesota-C" class="DelegateCount">–</td>
+                        <td id="Row-Minnesota-S" class="DelegateCount">–</td>
+                        <td id="Row-Minnesota-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Oklahoma">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Oklahoma,_2016" title="United States presidential election in Oklahoma, 2016">Oklahoma</a></td>
+                        <td class="hideMobileItem">38</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-Oklahoma-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Oklahoma-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Oklahoma-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Oklahoma-C" class="DelegateCount">–</td>
+                        <td id="Row-Oklahoma-S" class="DelegateCount">–</td>
+                        <td id="Row-Oklahoma-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Tennessee">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Tennessee,_2016" title="United States presidential election in Tennessee, 2016">Tennessee</a></td>
+                        <td class="hideMobileItem">67</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Tennessee-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Tennessee-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Tennessee-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Tennessee-C" class="DelegateCount">–</td>
+                        <td id="Row-Tennessee-S" class="DelegateCount">–</td>
+                        <td id="Row-Tennessee-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Texas">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Texas,_2016" title="United States presidential election in Texas, 2016">Texas</a></td>
+                        <td class="hideMobileItem">222</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Texas-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Texas-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Texas-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Texas-C" class="DelegateCount">–</td>
+                        <td id="Row-Texas-S" class="DelegateCount">–</td>
+                        <td id="Row-Texas-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Vermont">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Vermont,_2016" title="United States presidential election in Vermont, 2016">Vermont</a></td>
+                        <td class="hideMobileItem">16</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Vermont-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Vermont-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Vermont-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Vermont-C" class="DelegateCount">–</td>
+                        <td id="Row-Vermont-S" class="DelegateCount">–</td>
+                        <td id="Row-Vermont-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Virginia">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Virginia,_2016" title="United States presidential election in Virginia, 2016">Virginia</a></td>
+                        <td class="hideMobileItem">95</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Virginia-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Virginia-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Virginia-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Virginia-C" class="DelegateCount">–</td>
+                        <td id="Row-Virginia-S" class="DelegateCount">–</td>
+                        <td id="Row-Virginia-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Kansas">
+                        <td rowspan="3" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-05-0000</span><span style="white-space: nowrap">March 5</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Kansas,_2016" title="United States presidential election in Kansas, 2016">Kansas</a></td>
+                        <td class="hideMobileItem">33</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Kansas-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Kansas-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Kansas-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Kansas-C" class="DelegateCount">–</td>
+                        <td id="Row-Kansas-S" class="DelegateCount">–</td>
+                        <td id="Row-Kansas-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Louisiana">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Louisiana,_2016" title="United States presidential election in Louisiana, 2016">Louisiana</a></td>
+                        <td class="hideMobileItem">51</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Louisiana-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Louisiana-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Louisiana-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Louisiana-C" class="DelegateCount">–</td>
+                        <td id="Row-Louisiana-S" class="DelegateCount">–</td>
+                        <td id="Row-Louisiana-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Nebraska">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Nebraska,_2016" title="United States presidential election in Nebraska, 2016">Nebraska</a></td>
+                        <td class="hideMobileItem">25</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Nebraska-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Nebraska-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Nebraska-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Nebraska-C" class="DelegateCount">–</td>
+                        <td id="Row-Nebraska-S" class="DelegateCount">–</td>
+                        <td id="Row-Nebraska-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Maine">
+                        <td rowspan="1" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-06-0000</span><span style="white-space: nowrap">March 6</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Maine,_2016" title="United States presidential election in Maine, 2016">Maine</a></td>
+                        <td class="hideMobileItem">25</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Maine-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Maine-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Maine-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Maine-C" class="DelegateCount">–</td>
+                        <td id="Row-Maine-S" class="DelegateCount">–</td>
+                        <td id="Row-Maine-Spread">-</td>
+                    </tr>
 
-            <tr id="Row-Sub-Total" class="Row-Sub-Total">
-                <td rowspan="1"><span class="sortkey" style="display:none;speak:none"></span><span style="white-space:nowrap">Total to Date</span></td>
-                <td></td>
-                <td id="Row-S-Totals-Committed-A"></td>
-                <td class="auto-style3"></td>
-                <td >&nbsp;</td>
-                <td >&nbsp;</td>
-                <td >&nbsp;</td>
-                <td id="Row-S-Totals-Committed-C">–</td>
-                <td id="Row-S-Totals-Committed-S">–</td>
-                <td id="Row-S-Totals-Committed-Spread">-</td>
-            </tr>
-            <tr id="Row-Democrats_Abroad">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-03-01-0000</span>March 1–8</td>
-                <td><a href="https://en.wikipedia.org/wiki/Democrats_Abroad_primary,_2016" title="Democrats Abroad primary, 2016">Democrats Abroad</a></td>
-                <td>13</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Democrats_Abroad-Projection-C">&nbsp;</td>
-                <td id="Row-Democrats_Abroad-Projection">&nbsp;</td>
-                <td id="Row-Democrats_Abroad-Projection-S">&nbsp;</td>
-                <td id="Row-Democrats_Abroad-C">–</td>
-                <td id="Row-Democrats_Abroad-S">–</td>
-                <td id="Row-Democrats_Abroad-Spread">-</td>
-            </tr>
-            <tr id="Row-Michigan">
-                <td rowspan="2"><span class="sortkey" style="display:none;speak:none">000000002016-03-08-0000</span><span style="white-space:nowrap">March 8</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Michigan,_2016" title="United States presidential election in Michigan, 2016">Michigan</a></td>
-                <td>130</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Michigan-Projection-C">&nbsp;</td>
-                <td id="Row-Michigan-Projection">&nbsp;</td>
-                <td id="Row-Michigan-Projection-S">&nbsp;</td>
-                <td id="Row-Michigan-C">–</td>
-                <td id="Row-Michigan-S">–</td>
-                <td id="Row-Michigan-Spread">-</td>
-            </tr>
-            <tr id="Row-Mississippi">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Mississippi,_2016" title="United States presidential election in Mississippi, 2016">Mississippi</a></td>
-                <td>36</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Mississippi-Projection-C">&nbsp;</td>
-                <td id="Row-Mississippi-Projection">&nbsp;</td>
-                <td id="Row-Mississippi-Projection-S">&nbsp;</td>
-                <td id="Row-Mississippi-C">–</td>
-                <td id="Row-Mississippi-S">–</td>
-                <td id="Row-Mississippi-Spread">-</td>
-            </tr>
-            <tr id="Row-Northern_Mariana_Islands">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-03-12-0000</span><span style="white-space:nowrap">March 12</span></td>
-                <td><a href="/w/index.php?title=United_States_presidential_election_in_the_Northern_Mariana_Islands,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in the Northern Mariana Islands, 2016 (page does not exist)">Northern Mariana Islands</a></td>
-                <td>6</td>
-                <td class="auto-style3">Caucus</td>
-                <td id="Row-Northern_Mariana_Islands-Projection-C">&nbsp;</td>
-                <td id="Row-Northern_Mariana_Islands-Projection">&nbsp;</td>
-                <td id="Row-Northern_Mariana_Islands-Projection-S">&nbsp;</td>
-                <td id="Row-Northern_Mariana_Islands-C">–</td>
-                <td id="Row-Northern_Mariana_Islands-S">–</td>
-                <td id="Row-Northern_Mariana_Islands-Spread">-</td>
-            </tr>
-            <tr id="Row-Florida">
-                <td rowspan="5"><span class="sortkey" style="display:none;speak:none">000000002016-03-15-0000</span><span style="white-space:nowrap">March 15</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Florida,_2016" title="United States presidential election in Florida, 2016">Florida</a></td>
-                <td>214</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Florida-Projection-C">&nbsp;</td>
-                <td id="Row-Florida-Projection">&nbsp;</td>
-                <td id="Row-Florida-Projection-S">&nbsp;</td>
-                <td id="Row-Florida-C">–</td>
-                <td id="Row-Florida-S">–</td>
-                <td id="Row-Florida-Spread">-</td>
-            </tr>
-            <tr id="Row-Illinois">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Illinois,_2016" title="United States presidential election in Illinois, 2016">Illinois</a></td>
-                <td>156</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Illinois-Projection-C">&nbsp;</td>
-                <td id="Row-Illinois-Projection">&nbsp;</td>
-                <td id="Row-Illinois-Projection-S">&nbsp;</td>
-                <td id="Row-Illinois-C">–</td>
-                <td id="Row-Illinois-S">–</td>
-                <td id="Row-Illinois-Spread">-</td>
-            </tr>
-            <tr id="Row-Missouri">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Missouri,_2016" title="United States presidential election in Missouri, 2016">Missouri</a></td>
-                <td>71</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Missouri-Projection-C">&nbsp;</td>
-                <td id="Row-Missouri-Projection">&nbsp;</td>
-                <td id="Row-Missouri-Projection-S">&nbsp;</td>
-                <td id="Row-Missouri-C">–</td>
-                <td id="Row-Missouri-S">–</td>
-                <td id="Row-Missouri-Spread">-</td>
-            </tr>
-            <tr id="Row-North_Carolina">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_North_Carolina,_2016" title="United States presidential election in North Carolina, 2016">North Carolina</a></td>
-                <td>107</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-North_Carolina-Projection-C">&nbsp;</td>
-                <td id="Row-North_Carolina-Projection">&nbsp;</td>
-                <td id="Row-North_Carolina-Projection-S">&nbsp;</td>
-                <td id="Row-North_Carolina-C">–</td>
-                <td id="Row-North_Carolina-S">–</td>
-                <td id="Row-North_Carolina-Spread">-</td>
-            </tr>
-            <tr id="Row-Ohio">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Ohio,_2016" title="United States presidential election in Ohio, 2016">Ohio</a></td>
-                <td>143</td>
-                <td class="auto-style3">Semi-open primary</td>
-                <td id="Row-Ohio-Projection-C">&nbsp;</td>
-                <td id="Row-Ohio-Projection">&nbsp;</td>
-                <td id="Row-Ohio-Projection-S">&nbsp;</td>
-                <td id="Row-Ohio-C">–</td>
-                <td id="Row-Ohio-S">–</td>
-                <td id="Row-Ohio-Spread">-</td>
-            </tr>
-            <tr id="Row-Arizona">
-                <td rowspan="3"><span class="sortkey" style="display:none;speak:none">000000002016-03-22-0000</span><span style="white-space:nowrap">March 22</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Arizona,_2016" title="United States presidential election in Arizona, 2016">Arizona</a></td>
-                <td>75</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Arizona-Projection-C">&nbsp;</td>
-                <td id="Row-Arizona-Projection">&nbsp;</td>
-                <td id="Row-Arizona-Projection-S">&nbsp;</td>
-                <td id="Row-Arizona-C">–</td>
-                <td id="Row-Arizona-S">–</td>
-                <td id="Row-Arizona-Spread">-</td>
-            </tr>
-            <tr id="Row-Idaho">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Idaho,_2016" title="United States presidential election in Idaho, 2016">Idaho</a></td>
-                <td>23</td>
-                <td class="auto-style3">Open caucus</td>
-                <td id="Row-Idaho-Projection-C">&nbsp;</td>
-                <td id="Row-Idaho-Projection">&nbsp;</td>
-                <td id="Row-Idaho-Projection-S">&nbsp;</td>
-                <td id="Row-Idaho-C">–</td>
-                <td id="Row-Idaho-S">–</td>
-                <td id="Row-Idaho-Spread">-</td>
-            </tr>
-            <tr id="Row-Utah">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Utah,_2016" title="United States presidential election in Utah, 2016">Utah</a></td>
-                <td>33</td>
-                <td class="auto-style3">Semi-open caucus</td>
-                <td id="Row-Utah-Projection-C">&nbsp;</td>
-                <td id="Row-Utah-Projection">&nbsp;</td>
-                <td id="Row-Utah-Projection-S">&nbsp;</td>
-                <td id="Row-Utah-C">–</td>
-                <td id="Row-Utah-S">–</td>
-                <td id="Row-Utah-Spread">-</td>
-            </tr>
-            <tr id="Row-Alaska">
-                <td rowspan="3"><span class="sortkey" style="display:none;speak:none">000000002016-03-26-0000</span><span style="white-space:nowrap">March 26</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Alaska,_2016" title="United States presidential election in Alaska, 2016">Alaska</a></td>
-                <td>16</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Alaska-Projection-C">&nbsp;</td>
-                <td id="Row-Alaska-Projection">&nbsp;</td>
-                <td id="Row-Alaska-Projection-S">&nbsp;</td>
-                <td id="Row-Alaska-C">–</td>
-                <td id="Row-Alaska-S">–</td>
-                <td id="Row-Alaska-Spread">-</td>
-            </tr>
-            <tr id="Row-Hawaii">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Hawaii,_2016" title="United States presidential election in Hawaii, 2016">Hawaii</a></td>
-                <td>25</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Hawaii-Projection-C">&nbsp;</td>
-                <td id="Row-Hawaii-Projection">&nbsp;</td>
-                <td id="Row-Hawaii-Projection-S">&nbsp;</td>
-                <td id="Row-Hawaii-C">–</td>
-                <td id="Row-Hawaii-S">–</td>
-                <td id="Row-Hawaii-Spread">-</td>
-            </tr>
-            <tr id="Row-Washington">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Washington,_2016" title="United States presidential election in Washington, 2016" class="mw-redirect">Washington</a><sup id="cite_ref-234" class="reference"><a href="#cite_note-234"><span></span></a></sup></td>
-                <td>101</td>
-                <td class="auto-style3">Open caucus</td>
-                <td id="Row-Washington-Projection-C">&nbsp;</td>
-                <td id="Row-Washington-Projection">&nbsp;</td>
-                <td id="Row-Washington-Projection-S">&nbsp;</td>
-                <td id="Row-Washington-C">–</td>
-                <td id="Row-Washington-S">–</td>
-                <td id="Row-Washington-Spread">-</td>
-            </tr>
-            <tr id="Row-Wisconsin">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-04-05-0000</span><span style="white-space:nowrap">April 5</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Wisconsin,_2016" title="United States presidential election in Wisconsin, 2016">Wisconsin</a></td>
-                <td>86</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Wisconsin-Projection-C">&nbsp;</td>
-                <td id="Row-Wisconsin-Projection">&nbsp;</td>
-                <td id="Row-Wisconsin-Projection-S">&nbsp;</td>
-                <td id="Row-Wisconsin-C">–</td>
-                <td id="Row-Wisconsin-S">–</td>
-                <td id="Row-Wisconsin-Spread">-</td>
-            </tr>
-            <tr id="Row-Wyoming">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-04-09-0000</span><span style="white-space:nowrap">April 9</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Wyoming,_2016" title="United States presidential election in Wyoming, 2016">Wyoming</a></td>
-                <td>14</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Wyoming-Projection-C">&nbsp;</td>
-                <td id="Row-Wyoming-Projection">&nbsp;</td>
-                <td id="Row-Wyoming-Projection-S">&nbsp;</td>
-                <td id="Row-Wyoming-C">–</td>
-                <td id="Row-Wyoming-S">–</td>
-                <td id="Row-Wyoming-Spread">-</td>
-            </tr>
-            <tr id="Row-New_York">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-04-19-0000</span><span style="white-space:nowrap">April 19</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_New_York,_2016" title="United States presidential election in New York, 2016">New York</a></td>
-                <td>247</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-New_York-Projection-C">&nbsp;</td>
-                <td id="Row-New_York-Projection">&nbsp;</td>
-                <td id="Row-New_York-Projection-S">&nbsp;</td>
-                <td id="Row-New_York-C">–</td>
-                <td id="Row-New_York-S">–</td>
-                <td id="Row-New_York-Spread">-</td>
-            </tr>
-            <tr id="Row-Connecticut">
-                <td rowspan="5"><span class="sortkey" style="display:none;speak:none">000000002016-04-26-0000</span><span style="white-space:nowrap">April 26</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Connecticut,_2016" title="United States presidential election in Connecticut, 2016">Connecticut</a></td>
-                <td>55</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Connecticut-Projection-C">&nbsp;</td>
-                <td id="Row-Connecticut-Projection">&nbsp;</td>
-                <td id="Row-Connecticut-Projection-S">&nbsp;</td>
-                <td id="Row-Connecticut-C">–</td>
-                <td id="Row-Connecticut-S">–</td>
-                <td id="Row-Connecticut-Spread">-</td>
-            </tr>
-            <tr id="Row-Delaware">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Delaware,_2016" title="United States presidential election in Delaware, 2016">Delaware</a></td>
-                <td>21</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Delaware-Projection-C">&nbsp;</td>
-                <td id="Row-Delaware-Projection">&nbsp;</td>
-                <td id="Row-Delaware-Projection-S">&nbsp;</td>
-                <td id="Row-Delaware-C">–</td>
-                <td id="Row-Delaware-S">–</td>
-                <td id="Row-Delaware-Spread">-</td>
-            </tr>
-            <tr id="Row-Maryland">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Maryland,_2016" title="United States presidential election in Maryland, 2016">Maryland</a></td>
-                <td>95</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Maryland-Projection-C">&nbsp;</td>
-                <td id="Row-Maryland-Projection">&nbsp;</td>
-                <td id="Row-Maryland-Projection-S">&nbsp;</td>
-                <td id="Row-Maryland-C">–</td>
-                <td id="Row-Maryland-S">–</td>
-                <td id="Row-Maryland-Spread">-</td>
-            </tr>
-            <tr id="Row-Pennsylvania">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Pennsylvania,_2016" title="United States presidential election in Pennsylvania, 2016">Pennsylvania</a></td>
-                <td>189</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Pennsylvania-Projection-C">&nbsp;</td>
-                <td id="Row-Pennsylvania-Projection">&nbsp;</td>
-                <td id="Row-Pennsylvania-Projection-S">&nbsp;</td>
-                <td id="Row-Pennsylvania-C">–</td>
-                <td id="Row-Pennsylvania-S">–</td>
-                <td id="Row-Pennsylvania-Spread">-</td>
-            </tr>
-            <tr id="Row-Rhode_Island">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Rhode_Island,_2016" title="United States presidential election in Rhode Island, 2016">Rhode Island</a></td>
-                <td>24</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-Rhode_Island-Projection-C">&nbsp;</td>
-                <td id="Row-Rhode_Island-Projection">&nbsp;</td>
-                <td id="Row-Rhode_Island-Projection-S">&nbsp;</td>
-                <td id="Row-Rhode_Island-C">–</td>
-                <td id="Row-Rhode_Island-S">–</td>
-                <td id="Row-Rhode_Island-Spread">-</td>
-            </tr>
-            <tr id="Row-Indiana">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-05-03-0000</span><span style="white-space:nowrap">May 3</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Indiana,_2016" title="United States presidential election in Indiana, 2016">Indiana</a></td>
-                <td>83</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Indiana-Projection-C">&nbsp;</td>
-                <td id="Row-Indiana-Projection">&nbsp;</td>
-                <td id="Row-Indiana-Projection-S">&nbsp;</td>
-                <td id="Row-Indiana-C">–</td>
-                <td id="Row-Indiana-S">–</td>
-                <td id="Row-Indiana-Spread">-</td>
-            </tr>
-            <tr id="Row-Guam">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-05-07-0000</span><span style="white-space:nowrap">May 7</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Guam,_2016" title="United States presidential election in Guam, 2016">Guam</a></td>
-                <td>7</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Guam-Projection-C">&nbsp;</td>
-                <td id="Row-Guam-Projection">&nbsp;</td>
-                <td id="Row-Guam-Projection-S">&nbsp;</td>
-                <td id="Row-Guam-C">–</td>
-                <td id="Row-Guam-S">–</td>
-                <td id="Row-Guam-Spread">-</td>
-            </tr>
-            <tr id="Row-West_Virginia">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-05-10-0000</span><span style="white-space:nowrap">May 10</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_West_Virginia,_2016" title="United States presidential election in West Virginia, 2016">West Virginia</a></td>
-                <td>29</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-West_Virginia-Projection-C">&nbsp;</td>
-                <td id="Row-West_Virginia-Projection">&nbsp;</td>
-                <td id="Row-West_Virginia-Projection-S">&nbsp;</td>
-                <td id="Row-West_Virginia-C">–</td>
-                <td id="Row-West_Virginia-S">–</td>
-                <td id="Row-West_Virginia-Spread">-</td>
-            </tr>
-            <tr id="Row-Kentucky">
-                <td rowspan="2"><span class="sortkey" style="display:none;speak:none">000000002016-05-17-0000</span><span style="white-space:nowrap">May 17</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Kentucky,_2016" title="United States presidential election in Kentucky, 2016">Kentucky</a></td>
-                <td>55</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Kentucky-Projection-C">&nbsp;</td>
-                <td id="Row-Kentucky-Projection">&nbsp;</td>
-                <td id="Row-Kentucky-Projection-S">&nbsp;</td>
-                <td id="Row-Kentucky-C">–</td>
-                <td id="Row-Kentucky-S">–</td>
-                <td id="Row-Kentucky-Spread">-</td>
-            </tr>
-            <tr id="Row-Oregon">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Oregon,_2016" title="United States presidential election in Oregon, 2016">Oregon</a></td>
-                <td>61</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-Oregon-Projection-C">&nbsp;</td>
-                <td id="Row-Oregon-Projection">&nbsp;</td>
-                <td id="Row-Oregon-Projection-S">&nbsp;</td>
-                <td id="Row-Oregon-C">–</td>
-                <td id="Row-Oregon-S">–</td>
-                <td id="Row-Oregon-Spread">-</td>
-            </tr>
-            <tr id="Row-Virgin_Islands">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-06-04-0000</span><span style="white-space:nowrap">June 4</span></td>
-                <td><a href="/w/index.php?title=United_States_presidential_election_in_Virgin_Islands,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in Virgin Islands, 2016 (page does not exist)">Virgin Islands</a></td>
-                <td>7</td>
-                <td class="auto-style3">Closed caucus</td>
-                <td id="Row-Virgin_Islands-Projection-C">&nbsp;</td>
-                <td id="Row-Virgin_Islands-Projection">&nbsp;</td>
-                <td id="Row-Virgin_Islands-Projection-S">&nbsp;</td>
-                <td id="Row-Virgin_Islands-C">–</td>
-                <td id="Row-Virgin_Islands-S">–</td>
-                <td id="Row-Virgin_Islands-Spread">-</td>
-            </tr>
-            <tr id="Row-Puerto_Rico">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-06-05-0000</span><span style="white-space:nowrap">June 5</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Puerto_Rico,_2016" title="United States presidential election in Puerto Rico, 2016">Puerto Rico</a></td>
-                <td>60</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Puerto_Rico-Projection-C">&nbsp;</td>
-                <td id="Row-Puerto_Rico-Projection">&nbsp;</td>
-                <td id="Row-Puerto_Rico-Projection-S">&nbsp;</td>
-                <td id="Row-Puerto_Rico-C">–</td>
-                <td id="Row-Puerto_Rico-S">–</td>
-                <td id="Row-Puerto_Rico-Spread">-</td>
-            </tr>
-            <tr id="Row-California">
-                <td rowspan="6"><span class="sortkey" style="display:none;speak:none">000000002016-06-07-0000</span><span style="white-space:nowrap">June 7</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_California,_2016" title="United States presidential election in California, 2016">California</a></td>
-                <td>475</td>
-                <td class="auto-style3">Semi-closed primary</td>
-                <td id="Row-California-Projection-C">&nbsp;</td>
-                <td id="Row-California-Projection">&nbsp;</td>
-                <td id="Row-California-Projection-S">&nbsp;</td>
-                <td id="Row-California-C">–</td>
-                <td id="Row-California-S">–</td>
-                <td id="Row-California-Spread">-</td>
-            </tr>
-            <tr id="Row-Montana">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Montana,_2016" title="United States presidential election in Montana, 2016">Montana</a></td>
-                <td>21</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-Montana-Projection-C">&nbsp;</td>
-                <td id="Row-Montana-Projection">&nbsp;</td>
-                <td id="Row-Montana-Projection-S">&nbsp;</td>
-                <td id="Row-Montana-C">–</td>
-                <td id="Row-Montana-S">–</td>
-                <td id="Row-Montana-Spread">-</td>
-            </tr>
-            <tr id="Row-New_Jersey">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_New_Jersey,_2016" title="United States presidential election in New Jersey, 2016">New Jersey</a></td>
-                <td>126</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-New_Jersey-Projection-C">&nbsp;</td>
-                <td id="Row-New_Jersey-Projection">&nbsp;</td>
-                <td id="Row-New_Jersey-Projection-S">&nbsp;</td>
-                <td id="Row-New_Jersey-C">–</td>
-                <td id="Row-New_Jersey-S">–</td>
-                <td id="Row-New_Jersey-Spread">-</td>
-            </tr>
-            <tr id="Row-New_Mexico">
-                <td><a href="/w/index.php?title=United_States_presidential_election_in_New_Mexico,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in New Mexico, 2016 (page does not exist)">New Mexico</a></td>
-                <td>34</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-New_Mexico-Projection-C">&nbsp;</td>
-                <td id="Row-New_Mexico-Projection">&nbsp;</td>
-                <td id="Row-New_Mexico-Projection-S">&nbsp;</td>
-                <td id="Row-New_Mexico-C">–</td>
-                <td id="Row-New_Mexico-S">–</td>
-                <td id="Row-New_Mexico-Spread">-</td>
-            </tr>
-            <tr id="Row-North_Dakota">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_North_Dakota,_2016" title="United States presidential election in North Dakota, 2016">North Dakota</a></td>
-                <td>18</td>
-                <td class="auto-style3">Open primary</td>
-                <td id="Row-North_Dakota-Projection-C">&nbsp;</td>
-                <td id="Row-North_Dakota-Projection">&nbsp;</td>
-                <td id="Row-North_Dakota-Projection-S">&nbsp;</td>
-                <td id="Row-North_Dakota-C">–</td>
-                <td id="Row-North_Dakota-S">–</td>
-                <td id="Row-North_Dakota-Spread">-</td>
-            </tr>
-            <tr id="Row-South_Dakota">
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_South_Dakota,_2016" title="United States presidential election in South Dakota, 2016">South Dakota</a></td>
-                <td>20</td>
-                <td class="auto-style3">Semi-open primary</td>
-                <td id="Row-South_Dakota-Projection-C">&nbsp;</td>
-                <td id="Row-South_Dakota-Projection">&nbsp;</td>
-                <td id="Row-South_Dakota-Projection-S">&nbsp;</td>
-                <td id="Row-South_Dakota-C">–</td>
-                <td id="Row-South_Dakota-S">–</td>
-                <td id="Row-South_Dakota-Spread">-</td>
-            </tr>
-            <tr id="Row-District_of_Columbia">
-                <td><span class="sortkey" style="display:none;speak:none">000000002016-06-14-0000</span><span style="white-space:nowrap">June 14</span></td>
-                <td><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_District_of_Columbia,_2016" title="United States presidential election in District of Columbia, 2016" class="mw-redirect">District of Columbia</a></td>
-                <td>20</td>
-                <td class="auto-style3">Closed primary</td>
-                <td id="Row-District_of_Columbia-Projection-C">&nbsp;</td>
-                <td id="Row-District_of_Columbia-Projection">&nbsp;</td>
-                <td id="Row-District_of_Columbia-Projection-S">&nbsp;</td>
-                <td id="Row-District_of_Columbia-C">–</td>
-                <td id="Row-District_of_Columbia-S">–</td>
-                <td id="Row-District_of_Columbia-Spread">-</td>
-            </tr>
 
-        </tbody>
-        <tfoot>
-                        <tr class="Row-Break"><th colspan="10">&nbsp;</th></tr>
-            <tr id="Row-Totals-Committed">
-                <th colspan="2">Total Committed Delegates</th>
-                <th id="Row-Totals-Committed-A"></th>
+                    <tr id="Row-Michigan">
+                        <td rowspan="2" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-08-0000</span><span style="white-space: nowrap">March 8</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Michigan,_2016" title="United States presidential election in Michigan, 2016">Michigan</a></td>
+                        <td class="hideMobileItem">130</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Michigan-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Michigan-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Michigan-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Michigan-C" class="DelegateCount">–</td>
+                        <td id="Row-Michigan-S" class="DelegateCount">–</td>
+                        <td id="Row-Michigan-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Mississippi">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Mississippi,_2016" title="United States presidential election in Mississippi, 2016">Mississippi</a></td>
+                        <td class="hideMobileItem">36</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Mississippi-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Mississippi-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Mississippi-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Mississippi-C" class="DelegateCount">–</td>
+                        <td id="Row-Mississippi-S" class="DelegateCount">–</td>
+                        <td id="Row-Mississippi-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Sub-Total" class="Row-Sub-Total">
+                        <td rowspan="1" class="ElectionDate"><span class="sortkey" style="display: none; speak: none"></span><span style="white-space: nowrap">Total to Date</span></td>
+                        <td class="State"></td>
+                        <td id="Row-S-Totals-Committed-A" class="hideMobileItem"></td>
+                        <td class="hideMobileItem ElectionType"></td>
+                        <td class="Projection">&nbsp;</td>
+                        <td class="Projection">&nbsp;</td>
+                        <td class="Projection">&nbsp;</td>
+                        <td id="Row-S-Totals-Committed-C" class="DelegateCount">–</td>
+                        <td id="Row-S-Totals-Committed-S" class="DelegateCount">–</td>
+                        <td id="Row-S-Totals-Committed-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Democrats_Abroad">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-01-0000</span>March 1–8</td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/Democrats_Abroad_primary,_2016" title="Democrats Abroad primary, 2016">Democrats Abroad</a></td>
+                        <td class="hideMobileItem">13</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Democrats_Abroad-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Democrats_Abroad-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Democrats_Abroad-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Democrats_Abroad-C" class="DelegateCount">–</td>
+                        <td id="Row-Democrats_Abroad-S" class="DelegateCount">–</td>
+                        <td id="Row-Democrats_Abroad-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Northern_Mariana_Islands">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-12-0000</span><span style="white-space: nowrap">March 12</span></td>
+                        <td class="State"><a href="/w/index.php?title=United_States_presidential_election_in_the_Northern_Mariana_Islands,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in the Northern Mariana Islands, 2016 (page does not exist)">Northern Mariana Islands</a></td>
+                        <td class="hideMobileItem">6</td>
+                        <td class="hideMobileItem ElectionType">Caucus</td>
+                        <td id="Row-Northern_Mariana_Islands-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Northern_Mariana_Islands-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Northern_Mariana_Islands-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Northern_Mariana_Islands-C" class="DelegateCount">–</td>
+                        <td id="Row-Northern_Mariana_Islands-S" class="DelegateCount">–</td>
+                        <td id="Row-Northern_Mariana_Islands-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Florida">
+                        <td rowspan="5" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-15-0000</span><span style="white-space: nowrap">March 15</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Florida,_2016" title="United States presidential election in Florida, 2016">Florida</a></td>
+                        <td class="hideMobileItem">214</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Florida-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Florida-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Florida-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Florida-C" class="DelegateCount">–</td>
+                        <td id="Row-Florida-S" class="DelegateCount">–</td>
+                        <td id="Row-Florida-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Illinois">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Illinois,_2016" title="United States presidential election in Illinois, 2016">Illinois</a></td>
+                        <td class="hideMobileItem">156</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Illinois-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Illinois-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Illinois-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Illinois-C" class="DelegateCount">–</td>
+                        <td id="Row-Illinois-S" class="DelegateCount">–</td>
+                        <td id="Row-Illinois-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Missouri">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Missouri,_2016" title="United States presidential election in Missouri, 2016">Missouri</a></td>
+                        <td class="hideMobileItem">71</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Missouri-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Missouri-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Missouri-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Missouri-C" class="DelegateCount">–</td>
+                        <td id="Row-Missouri-S" class="DelegateCount">–</td>
+                        <td id="Row-Missouri-Spread">-</td>
+                    </tr>
+                    <tr id="Row-North_Carolina">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_North_Carolina,_2016" title="United States presidential election in North Carolina, 2016">North Carolina</a></td>
+                        <td class="hideMobileItem">107</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-North_Carolina-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Carolina-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Carolina-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Carolina-C" class="DelegateCount">–</td>
+                        <td id="Row-North_Carolina-S" class="DelegateCount">–</td>
+                        <td id="Row-North_Carolina-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Ohio">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Ohio,_2016" title="United States presidential election in Ohio, 2016">Ohio</a></td>
+                        <td class="hideMobileItem">143</td>
+                        <td class="hideMobileItem ElectionType">Semi-open primary</td>
+                        <td id="Row-Ohio-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Ohio-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Ohio-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Ohio-C" class="DelegateCount">–</td>
+                        <td id="Row-Ohio-S" class="DelegateCount">–</td>
+                        <td id="Row-Ohio-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Arizona">
+                        <td rowspan="3" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-22-0000</span><span style="white-space: nowrap">March 22</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Arizona,_2016" title="United States presidential election in Arizona, 2016">Arizona</a></td>
+                        <td class="hideMobileItem">75</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Arizona-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Arizona-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Arizona-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Arizona-C" class="DelegateCount">–</td>
+                        <td id="Row-Arizona-S" class="DelegateCount">–</td>
+                        <td id="Row-Arizona-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Idaho">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Idaho,_2016" title="United States presidential election in Idaho, 2016">Idaho</a></td>
+                        <td class="hideMobileItem">23</td>
+                        <td class="hideMobileItem ElectionType">Open caucus</td>
+                        <td id="Row-Idaho-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Idaho-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Idaho-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Idaho-C" class="DelegateCount">–</td>
+                        <td id="Row-Idaho-S" class="DelegateCount">–</td>
+                        <td id="Row-Idaho-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Utah">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Utah,_2016" title="United States presidential election in Utah, 2016">Utah</a></td>
+                        <td class="hideMobileItem">33</td>
+                        <td class="hideMobileItem ElectionType">Semi-open caucus</td>
+                        <td id="Row-Utah-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Utah-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Utah-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Utah-C" class="DelegateCount">–</td>
+                        <td id="Row-Utah-S" class="DelegateCount">–</td>
+                        <td id="Row-Utah-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Alaska">
+                        <td rowspan="3" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-03-26-0000</span><span style="white-space: nowrap">March 26</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Alaska,_2016" title="United States presidential election in Alaska, 2016">Alaska</a></td>
+                        <td class="hideMobileItem">16</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Alaska-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Alaska-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Alaska-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Alaska-C" class="DelegateCount">–</td>
+                        <td id="Row-Alaska-S" class="DelegateCount">–</td>
+                        <td id="Row-Alaska-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Hawaii">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Hawaii,_2016" title="United States presidential election in Hawaii, 2016">Hawaii</a></td>
+                        <td class="hideMobileItem">25</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Hawaii-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Hawaii-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Hawaii-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Hawaii-C" class="DelegateCount">–</td>
+                        <td id="Row-Hawaii-S" class="DelegateCount">–</td>
+                        <td id="Row-Hawaii-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Washington">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Washington,_2016" title="United States presidential election in Washington, 2016" class="mw-redirect">Washington</a><sup id="cite_ref-234" class="reference"><a href="#cite_note-234"><span></span></a></sup></td>
+                        <td class="hideMobileItem">101</td>
+                        <td class="hideMobileItem ElectionType">Open caucus</td>
+                        <td id="Row-Washington-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Washington-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Washington-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Washington-C" class="DelegateCount">–</td>
+                        <td id="Row-Washington-S" class="DelegateCount">–</td>
+                        <td id="Row-Washington-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Wisconsin">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-04-05-0000</span><span style="white-space: nowrap">April 5</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Wisconsin,_2016" title="United States presidential election in Wisconsin, 2016">Wisconsin</a></td>
+                        <td class="hideMobileItem">86</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Wisconsin-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Wisconsin-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Wisconsin-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Wisconsin-C" class="DelegateCount">–</td>
+                        <td id="Row-Wisconsin-S" class="DelegateCount">–</td>
+                        <td id="Row-Wisconsin-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Wyoming">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-04-09-0000</span><span style="white-space: nowrap">April 9</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Wyoming,_2016" title="United States presidential election in Wyoming, 2016">Wyoming</a></td>
+                        <td class="hideMobileItem">14</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Wyoming-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Wyoming-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Wyoming-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Wyoming-C" class="DelegateCount">–</td>
+                        <td id="Row-Wyoming-S" class="DelegateCount">–</td>
+                        <td id="Row-Wyoming-Spread">-</td>
+                    </tr>
+                    <tr id="Row-New_York">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-04-19-0000</span><span style="white-space: nowrap">April 19</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_New_York,_2016" title="United States presidential election in New York, 2016">New York</a></td>
+                        <td class="hideMobileItem">247</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-New_York-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-New_York-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-New_York-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-New_York-C" class="DelegateCount">–</td>
+                        <td id="Row-New_York-S" class="DelegateCount">–</td>
+                        <td id="Row-New_York-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Connecticut">
+                        <td rowspan="5" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-04-26-0000</span><span style="white-space: nowrap">April 26</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Connecticut,_2016" title="United States presidential election in Connecticut, 2016">Connecticut</a></td>
+                        <td class="hideMobileItem">55</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Connecticut-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Connecticut-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Connecticut-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Connecticut-C" class="DelegateCount">–</td>
+                        <td id="Row-Connecticut-S" class="DelegateCount">–</td>
+                        <td id="Row-Connecticut-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Delaware">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Delaware,_2016" title="United States presidential election in Delaware, 2016">Delaware</a></td>
+                        <td class="hideMobileItem">21</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Delaware-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Delaware-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Delaware-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Delaware-C" class="DelegateCount">–</td>
+                        <td id="Row-Delaware-S" class="DelegateCount">–</td>
+                        <td id="Row-Delaware-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Maryland">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Maryland,_2016" title="United States presidential election in Maryland, 2016">Maryland</a></td>
+                        <td class="hideMobileItem">95</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Maryland-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Maryland-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Maryland-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Maryland-C" class="DelegateCount">–</td>
+                        <td id="Row-Maryland-S" class="DelegateCount">–</td>
+                        <td id="Row-Maryland-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Pennsylvania">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Pennsylvania,_2016" title="United States presidential election in Pennsylvania, 2016">Pennsylvania</a></td>
+                        <td class="hideMobileItem">189</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Pennsylvania-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Pennsylvania-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Pennsylvania-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Pennsylvania-C" class="DelegateCount">–</td>
+                        <td id="Row-Pennsylvania-S" class="DelegateCount">–</td>
+                        <td id="Row-Pennsylvania-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Rhode_Island">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Rhode_Island,_2016" title="United States presidential election in Rhode Island, 2016">Rhode Island</a></td>
+                        <td class="hideMobileItem">24</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-Rhode_Island-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Rhode_Island-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Rhode_Island-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Rhode_Island-C" class="DelegateCount">–</td>
+                        <td id="Row-Rhode_Island-S" class="DelegateCount">–</td>
+                        <td id="Row-Rhode_Island-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Indiana">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-05-03-0000</span><span style="white-space: nowrap">May 3</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Indiana,_2016" title="United States presidential election in Indiana, 2016">Indiana</a></td>
+                        <td class="hideMobileItem">83</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Indiana-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Indiana-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Indiana-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Indiana-C" class="DelegateCount">–</td>
+                        <td id="Row-Indiana-S" class="DelegateCount">–</td>
+                        <td id="Row-Indiana-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Guam">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-05-07-0000</span><span style="white-space: nowrap">May 7</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Guam,_2016" title="United States presidential election in Guam, 2016">Guam</a></td>
+                        <td class="hideMobileItem">7</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Guam-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Guam-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Guam-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Guam-C" class="DelegateCount">–</td>
+                        <td id="Row-Guam-S" class="DelegateCount">–</td>
+                        <td id="Row-Guam-Spread">-</td>
+                    </tr>
+                    <tr id="Row-West_Virginia">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-05-10-0000</span><span style="white-space: nowrap">May 10</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_West_Virginia,_2016" title="United States presidential election in West Virginia, 2016">West Virginia</a></td>
+                        <td class="hideMobileItem">29</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-West_Virginia-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-West_Virginia-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-West_Virginia-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-West_Virginia-C" class="DelegateCount">–</td>
+                        <td id="Row-West_Virginia-S" class="DelegateCount">–</td>
+                        <td id="Row-West_Virginia-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Kentucky">
+                        <td rowspan="2" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-05-17-0000</span><span style="white-space: nowrap">May 17</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Kentucky,_2016" title="United States presidential election in Kentucky, 2016">Kentucky</a></td>
+                        <td class="hideMobileItem">55</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Kentucky-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Kentucky-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Kentucky-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Kentucky-C" class="DelegateCount">–</td>
+                        <td id="Row-Kentucky-S" class="DelegateCount">–</td>
+                        <td id="Row-Kentucky-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Oregon">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Oregon,_2016" title="United States presidential election in Oregon, 2016">Oregon</a></td>
+                        <td class="hideMobileItem">61</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-Oregon-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Oregon-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Oregon-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Oregon-C" class="DelegateCount">–</td>
+                        <td id="Row-Oregon-S" class="DelegateCount">–</td>
+                        <td id="Row-Oregon-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Virgin_Islands">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-06-04-0000</span><span style="white-space: nowrap">June 4</span></td>
+                        <td class="State"><a href="/w/index.php?title=United_States_presidential_election_in_Virgin_Islands,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in Virgin Islands, 2016 (page does not exist)">Virgin Islands</a></td>
+                        <td class="hideMobileItem">7</td>
+                        <td class="hideMobileItem ElectionType">Closed caucus</td>
+                        <td id="Row-Virgin_Islands-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Virgin_Islands-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Virgin_Islands-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Virgin_Islands-C" class="DelegateCount">–</td>
+                        <td id="Row-Virgin_Islands-S" class="DelegateCount">–</td>
+                        <td id="Row-Virgin_Islands-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Puerto_Rico">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-06-05-0000</span><span style="white-space: nowrap">June 5</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Puerto_Rico,_2016" title="United States presidential election in Puerto Rico, 2016">Puerto Rico</a></td>
+                        <td class="hideMobileItem">60</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Puerto_Rico-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Puerto_Rico-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Puerto_Rico-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Puerto_Rico-C" class="DelegateCount">–</td>
+                        <td id="Row-Puerto_Rico-S" class="DelegateCount">–</td>
+                        <td id="Row-Puerto_Rico-Spread">-</td>
+                    </tr>
+                    <tr id="Row-California">
+                        <td rowspan="6" class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-06-07-0000</span><span style="white-space: nowrap">June 7</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_California,_2016" title="United States presidential election in California, 2016">California</a></td>
+                        <td class="hideMobileItem">475</td>
+                        <td class="hideMobileItem ElectionType">Semi-closed primary</td>
+                        <td id="Row-California-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-California-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-California-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-California-C" class="DelegateCount">–</td>
+                        <td id="Row-California-S" class="DelegateCount">–</td>
+                        <td id="Row-California-Spread">-</td>
+                    </tr>
+                    <tr id="Row-Montana">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_Montana,_2016" title="United States presidential election in Montana, 2016">Montana</a></td>
+                        <td class="hideMobileItem">21</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-Montana-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-Montana-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-Montana-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-Montana-C" class="DelegateCount">–</td>
+                        <td id="Row-Montana-S" class="DelegateCount">–</td>
+                        <td id="Row-Montana-Spread">-</td>
+                    </tr>
+                    <tr id="Row-New_Jersey">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_New_Jersey,_2016" title="United States presidential election in New Jersey, 2016">New Jersey</a></td>
+                        <td class="hideMobileItem">126</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-New_Jersey-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Jersey-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Jersey-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Jersey-C" class="DelegateCount">–</td>
+                        <td id="Row-New_Jersey-S" class="DelegateCount">–</td>
+                        <td id="Row-New_Jersey-Spread">-</td>
+                    </tr>
+                    <tr id="Row-New_Mexico">
+                        <td class="State"><a href="/w/index.php?title=United_States_presidential_election_in_New_Mexico,_2016&amp;action=edit&amp;redlink=1" class="new" title="United States presidential election in New Mexico, 2016 (page does not exist)">New Mexico</a></td>
+                        <td class="hideMobileItem">34</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-New_Mexico-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Mexico-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Mexico-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-New_Mexico-C" class="DelegateCount">–</td>
+                        <td id="Row-New_Mexico-S" class="DelegateCount">–</td>
+                        <td id="Row-New_Mexico-Spread">-</td>
+                    </tr>
+                    <tr id="Row-North_Dakota">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_North_Dakota,_2016" title="United States presidential election in North Dakota, 2016">North Dakota</a></td>
+                        <td class="hideMobileItem">18</td>
+                        <td class="hideMobileItem ElectionType">Open primary</td>
+                        <td id="Row-North_Dakota-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Dakota-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Dakota-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-North_Dakota-C" class="DelegateCount">–</td>
+                        <td id="Row-North_Dakota-S" class="DelegateCount">–</td>
+                        <td id="Row-North_Dakota-Spread">-</td>
+                    </tr>
+                    <tr id="Row-South_Dakota">
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_South_Dakota,_2016" title="United States presidential election in South Dakota, 2016">South Dakota</a></td>
+                        <td class="hideMobileItem">20</td>
+                        <td class="hideMobileItem ElectionType">Semi-open primary</td>
+                        <td id="Row-South_Dakota-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Dakota-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Dakota-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-South_Dakota-C" class="DelegateCount">–</td>
+                        <td id="Row-South_Dakota-S" class="DelegateCount">–</td>
+                        <td id="Row-South_Dakota-Spread">-</td>
+                    </tr>
+                    <tr id="Row-District_of_Columbia">
+                        <td class="ElectionDate"><span class="sortkey" style="display: none; speak: none">000000002016-06-14-0000</span><span style="white-space: nowrap">June 14</span></td>
+                        <td class="State"><a href="https://en.wikipedia.org/wiki/United_States_presidential_election_in_District_of_Columbia,_2016" title="United States presidential election in District of Columbia, 2016" class="mw-redirect">District of Columbia</a></td>
+                        <td class="hideMobileItem">20</td>
+                        <td class="hideMobileItem ElectionType">Closed primary</td>
+                        <td id="Row-District_of_Columbia-Projection-C" class="Projection">&nbsp;</td>
+                        <td id="Row-District_of_Columbia-Projection" class="Projection">&nbsp;</td>
+                        <td id="Row-District_of_Columbia-Projection-S" class="Projection">&nbsp;</td>
+                        <td id="Row-District_of_Columbia-C" class="DelegateCount">–</td>
+                        <td id="Row-District_of_Columbia-S" class="DelegateCount">–</td>
+                        <td id="Row-District_of_Columbia-Spread">-</td>
+                    </tr>
 
-                <th class="auto-style3"></th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-                <th id="Row-Totals-Committed-C"></th>
-                <th id="Row-Totals-Committed-S"></th>
-                <th id="Row-Totals-Committed-Spread">&nbsp;</th>
-            </tr>
-            <tr id="Row-Totals-Projected">
-                <th colspan="2">Remaining Delegates</th>
-                <th id="Row-Totals-Projected-A"></th>
+                </tbody>
+                <tfoot>
+                    <tr class="Row-Break">
+                        <td class="ElectionDate">&nbsp;</td>
+                        <td class="State">&nbsp;</td>
+                        <td class="hideMobileItem">&nbsp;</td>
+                        <td class="hideMobileItem ElectionType">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="DelegateCount">&nbsp;</td>
+                        <td class="DelegateCount">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr id="Row-Totals-Committed">
+                        <th colspan="2">Total Committed Delegates</th>
+                        <th id="Row-Totals-Committed-A" class="hideMobileItem"></th>
 
-                <th class="auto-style3"></th>
-                <th>&nbsp;</th>
-                <th colspan="2">Projected Delegates</th>
-                
-                <th id="Row-Totals-Projected-C"></th>
-                <th id="Row-Totals-Projected-S"></th>
-                <th id="Row-Totals-Projected-Spread">&nbsp;</th>
-            </tr>
-            <tr id="Row-Totals1">
-                <th colspan="2">Total </th>
-                 <th id="Row-Totals-A"></th>
+                        <th class="hideMobileItem ElectionType"></th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th id="Row-Totals-Committed-C" class="DelegateCount"></th>
+                        <th id="Row-Totals-Committed-S" class="DelegateCount"></th>
+                        <th id="Row-Totals-Committed-Spread">&nbsp;</th>
+                    </tr>
+                    <tr id="Row-Totals-Projected">
+                        <th colspan="2">Remaining Delegates</th>
+                        <th id="Row-Totals-Projected-A" class="hideMobileItem"></th>
 
-                <th class="auto-style3"></th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-                <th>&nbsp;</th>
-                <th id="Row-Totals-C"></th>
-                <th id="Row-Totals-S"></th>
-                <th id="Row-Totals-Spread">&nbsp;</th>
-            </tr>
-            <tr id="Row-Totals2">
-                <th colspan="2"></th>
-                <th ></th>
+                        <th class="hideMobileItem ElectionType"></th>
+                        <th>&nbsp;</th>
+                        <th colspan="2">Projected Delegates</th>
 
-                <th class="auto-style3"></th>
-                 <th></th>
-                <th colspan="2">2,026 Needed To Win</th>
-                
-                <th id="Row-Totals-Winner" colspan="3"></th>
-                
-            
-                
-            </tr>
-        </tfoot>
-    </table>
-</div>
+                        <th id="Row-Totals-Projected-C" class="DelegateCount"></th>
+                        <th id="Row-Totals-Projected-S" class="DelegateCount"></th>
+                        <th id="Row-Totals-Projected-Spread">&nbsp;</th>
+                    </tr>
+                    <tr id="Row-Totals1">
+                        <th colspan="2">Total </th>
+                        <th id="Row-Totals-A" class="hideMobileItem"></th>
+
+                        <th class="hideMobileItem ElectionType"></th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th>&nbsp;</th>
+                        <th id="Row-Totals-C" class="DelegateCount"></th>
+                        <th id="Row-Totals-S" class="DelegateCount"></th>
+                        <th id="Row-Totals-Spread">&nbsp;</th>
+                    </tr>
+                    <tr id="Row-Totals2">
+                        <th colspan="2"></th>
+                        <th class="hideMobileItem"></th>
+
+                        <th class="hideMobileItem ElectionType"></th>
+                        <th></th>
+                        <th colspan="2">2,026 Needed For Majority</th>
+
+                        <th id="Row-Totals-Winner" colspan="3"></th>
+                    </tr>
+                    <tr id="Row-Totals3">
+                        <th colspan="2"></th>
+                        <th class="hideMobileItem"></th>
+
+                        <th class="hideMobileItem ElectionType"></th>
+                        <th></th>
+                        <th colspan="2">"Share your Projection" coming soon!</th>
+
+                        <th id="Row-Totals-Winner3" colspan="3">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td class="Row-Footer-C" colspan="4">*CT - A coin toss is used to randomly distribute an odd delegate.</td>
+                        <td class="Row-Footer-C" colspan="6" style="text-align: right">
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                            Tweet questions, comments, or suggestions <a href="https://twitter.com/intent/tweet?screen_name=DemRace" class="twitter-mention-button" data-related="DemRace">Tweet to @DemRace</a></td>
+                    </tr>
+                    <tr>
+                        <td class="Row-Footer-C" colspan="10">The democratic delegate allocation calculations (the math) can be found at <a href="http://www.thegreenpapers.com/P16/D-Math.phtml" title="The Green Papers">The Green Papers</a>.  Thanks for the information!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </body>
 </html>
